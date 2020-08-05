@@ -29,9 +29,14 @@
         select * from user where id =#{uid}
     </select>
 
-<!--根据名称模糊查询用户信息-->
+<!--根据名称模糊查询用户信息  -->
     <select id="findByName" parameterType="String" resultType="com.it.domain.User">
         select * from user where username like #{name}
-    </select>
+    <!--select * from user where username like '%${value}%'-->
 
+</select>
+<!--获取用户的总记录条数-->
+    <select id="findTotal" resultType="int">
+        select count(id) from user;
+    </select>
 </mapper>

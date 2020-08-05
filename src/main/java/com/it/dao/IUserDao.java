@@ -23,4 +23,7 @@ public interface IUserDao {
 
     //模糊查询用户信息
     List<User> findByName(String username);
+
+    //查询总用户数
+    int findTotal();
 }
