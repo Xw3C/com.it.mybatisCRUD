@@ -2,7 +2,7 @@
 
 ### 回顾mybatis的简单CRUD操作
 
-Mybatis使用XML配置进行简单的CRUD
+Mybatis使用XML配置进行CRUD操作
 
 IUserDao.xml文件中是CRUD操作的sql语句
 
