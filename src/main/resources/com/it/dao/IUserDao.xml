@@ -24,4 +24,14 @@
         delete from user where id = #{uid}
     </delete>
 
+<!--根据id查询用户信息-->
+    <select id="findById" parameterType="INT" resultType="com.it.domain.User">
+        select * from user where id =#{uid}
+    </select>
+
+<!--根据名称模糊查询用户信息-->
+    <select id="findByName" parameterType="String" resultType="com.it.domain.User">
+        select * from user where username like #{name}
+    </select>
+
 </mapper>
